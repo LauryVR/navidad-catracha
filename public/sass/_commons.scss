@@ -1,0 +1,40 @@
+html {
+    scroll-behavior: smooth;
+  }
+.background-color1-nc{
+    background: $color1-nc;
+}
+.h100{
+    height: 100%;
+}
+section{
+    /* max-height: 100vh; */
+    min-width: 100%;
+}
+body{
+    font-family: 'Futura Book';
+}
+h1{
+    font-family: 'Futura Bold';
+    font-size: 4rem ;  
+}
+h2{
+    font-family: 'Futura Book';
+    font-size: 2rem;
+}
+.float-logo{
+    transition: all .4s ease;
+    height: 150px; 
+    width: auto;
+    
+}
+.nav-logo{
+    transition: all .4s ease;
+    height: 60px; 
+    width: auto;
+}
+.rs{
+    span{
+        font-size: 1.5rem;
+    }
+}

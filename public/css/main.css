@@ -1,0 +1,390 @@
+/* Fonts Assets */
+@font-face {
+  font-family: "Futura Extrabold";
+  src: url("../assets/fonts/FuturaStd-ExtraBold.otf");
+}
+
+@font-face {
+  font-family: "Futura Bold";
+  src: url("../assets/fonts/FuturaStd-Bold.otf");
+}
+
+@font-face {
+  font-family: "Futura Book";
+  src: url("../assets/fonts/FuturaStd-Book.otf");
+}
+
+@font-face {
+  font-family: "Futura Heavy";
+  src: url("../assets/fonts/FuturaStd-Heavy.otf");
+}
+
+/* Colores de Navidad Catracha */
+html {
+  scroll-behavior: smooth;
+}
+
+.background-color1-nc {
+  background: #03144c;
+}
+
+.h100 {
+  height: 100%;
+}
+
+section {
+  /* max-height: 100vh; */
+  min-width: 100%;
+}
+
+body {
+  font-family: 'Futura Book';
+}
+
+h1 {
+  font-family: 'Futura Bold';
+  font-size: 4rem;
+}
+
+h2 {
+  font-family: 'Futura Book';
+  font-size: 2rem;
+}
+
+.float-logo {
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+  height: 150px;
+  width: auto;
+}
+
+.nav-logo {
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+  height: 60px;
+  width: auto;
+}
+
+.rs span {
+  font-size: 1.5rem;
+}
+
+.navbar {
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+ul .navbar-nav li a {
+  color: white;
+}
+
+.banner_video {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.banner_video video {
+  height: 130%;
+  width: 100%;
+  margin-top: -100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.banner_video .overlay-video {
+  background: #03144c;
+  opacity: 0.4;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.banner_video .text-banner {
+  position: absolute;
+  left: 5%;
+  bottom: 5%;
+  color: white;
+}
+
+.banner_video .text-banner h1 {
+  font-size: 4rem;
+}
+
+@media (max-width: 575.98px) {
+  .banner_video {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  .banner_video video {
+    height: 130%;
+    width: 100%;
+    margin-top: -100px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .banner_video .overlay-video {
+    background: #03144c;
+    opacity: 0.4;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+  .banner_video .text-banner {
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+    color: white;
+  }
+  .banner_video .text-banner h1 {
+    font-size: 3rem !important;
+  }
+}
+
+.img-right {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.img-right img {
+  max-width: 100%;
+  /* height: 100vh; */
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.item .overlay {
+  width: 100%;
+  height: 100%;
+  background: #03144c;
+  opacity: 0.0;
+  position: absolute;
+  top: -150%;
+  left: 0;
+  -webkit-transition: all .6s ease-out;
+  transition: all .6s ease-out;
+}
+
+.item .title-act {
+  position: absolute;
+  bottom: 2%;
+  color: white;
+  font-size: 1.5rem;
+  background: #03144c;
+  padding: 0.5rem 0.5rem;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.item .text-act {
+  position: absolute;
+  bottom: -150%;
+  color: white;
+  z-index: 5;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.item:hover .overlay {
+  width: 100%;
+  height: 100%;
+  background: #03144c;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: all .4s ease-in;
+  transition: all .4s ease-in;
+}
+
+.item:hover .title-act {
+  position: absolute;
+  bottom: -52%;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.item:hover .text-act {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  z-index: 5;
+  -webkit-transition: all .6s ease-in;
+  transition: all .6s ease-in;
+}
+
+/* Galeria de pop up*/
+.elem, .elem * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 !important;
+}
+
+.elem {
+  display: inline-block;
+  font-size: 0;
+  width: 100%;
+  border: 4px solid transparent;
+  border-bottom: none;
+  background: #fff;
+  padding: 0;
+  height: auto;
+  background-clip: padding-box;
+}
+
+.elem > span {
+  display: block;
+  cursor: pointer;
+  height: 0auto;
+  padding-bottom: 70%;
+  background-size: cover;
+  background-position: center center;
+}
+
+.banner-acts {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.banner-acts img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.banner-acts .overlay {
+  width: 100%;
+  height: 100%;
+  background: #03144c;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.4;
+}
+
+.banner-acts .text {
+  position: absolute;
+  padding: 1.5em 2em;
+  border: solid #b57f3a 3px;
+  color: white;
+}
+
+.banner-acts .text h1 {
+  font-size: 4rem !important;
+}
+
+@media (max-width: 575.98px) {
+  .banner-acts {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  .banner-acts img {
+    height: 100%;
+    width: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .banner-acts .overlay {
+    width: 100%;
+    height: 100%;
+    background: #03144c;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.4;
+  }
+  .banner-acts .text {
+    position: absolute;
+    padding: .5em .75em;
+    border: solid #b57f3a 3px;
+    color: white;
+    margin-top: 65px;
+  }
+  .banner-acts .text h1 {
+    font-size: 2rem !important;
+  }
+}
+
+.shadow1 {
+  -webkit-box-shadow: 5px 6px 42px -13px rgba(0, 0, 0, 0.77);
+  box-shadow: 5px 6px 42px -13px rgba(0, 0, 0, 0.77);
+}
+
+.card-nc {
+  border-radius: 4px;
+  position: relative;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+}
+
+.card-nc .card-nc-img {
+  width: 100%;
+  height: auto;
+}
+
+.card-nc .card-nc-img img {
+  width: 100%;
+}
+
+.card-nc .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(20%, rgba(255, 255, 255, 0)), color-stop(62%, white), color-stop(100%, white));
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(20%, rgba(255, 255, 255, 0)), color-stop(62%, white), to(white));
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 20%, white 62%, white 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 );
+}
+
+.card-nc .text {
+  display: -ms-grid;
+  display: grid;
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  color: #313131;
+  font-family: 'Futura Book';
+}
+
+.card-nc .text .fecha {
+  font-family: "Futura Bold";
+  font-size: 2.5rem;
+  color: #b57f3a;
+}
+
+.card-nc .text .tipo_actividad {
+  color: green;
+  font-size: 1.2rem;
+  font-family: 'Futura Heavy';
+}
+
+.card-nc .text .municipio {
+  font-family: 'Futura Heavy';
+}
+
+.card-nc .text .departamento {
+  font-family: 'Futura Bold';
+  font-size: 1.5rem;
+}
+
+.card-nc .text .hora {
+  color: #03144c;
+}
+/*# sourceMappingURL=main.css.map */
