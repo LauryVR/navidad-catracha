@@ -65,7 +65,7 @@
                     $url = str_replace('\\', '/', $url);
                     @endphp
                     <div class="text-center">
-                    <a class="btn btn-primary btn-block mt-2" href="actividades-{{$item->id}}" role="button">Actividades</a>
+                    <a class="btn btn-nc btn-block mt-2" style="" href="actividades-{{$item->id}}" role="button">Actividades</a>
                     <a class="elem btn btn-link btn-link btn-block mt-2" style="border-radius: 0" href="{{Storage::url($url)}}" title=""
                     data-lcl-thumb="{{Storage::url($url)}}">
                     Ver Galeria</a>

@@ -253,6 +253,38 @@ ul .navbar-nav li a {
   display: none;
 }
 
+.btn-nc {
+  background: white;
+  color: #03144c;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  border: 1px #03144c solid;
+}
+
+.btn-nc:hover {
+  background: #03144c;
+  color: white;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  border: 1px white solid;
+}
+
+.btn2-nc {
+  background: #03144c;
+  color: white;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  border: 1px white solid;
+}
+
+.btn2-nc:hover {
+  background: white;
+  color: #03144c;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  border: 1px #03144c solid;
+}
+
 .banner-acts {
   height: 100vh;
   width: 100%;

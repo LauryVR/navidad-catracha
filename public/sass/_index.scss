@@ -161,3 +161,32 @@ img{
 .owl-nav{
     display: none;
 }
+
+.btn-nc{
+    background:white ;
+        color: $color1-nc;
+        transition: all .3s ease;
+        border: 1px $color1-nc solid; 
+
+    &:hover{
+        background: $color1-nc;
+        color: white;
+        transition: all .3s ease;
+        border: 1px white solid;
+    }
+}
+.btn2-nc{
+    background: $color1-nc;
+    color: white;
+    transition: all .3s ease;
+    border: 1px white solid;
+
+    &:hover{
+       
+
+        background:white ;
+        color: $color1-nc;
+        transition: all .3s ease;
+        border: 1px $color1-nc solid; 
+    }
+}
