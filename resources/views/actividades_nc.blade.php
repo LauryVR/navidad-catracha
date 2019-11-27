@@ -1,7 +1,7 @@
 @extends('layouts.template')
 @section('content')
 <section class="banner-acts d-flex justify-content-center align-items-center">
-    <img src="./assets/images/navidad2.jpg" alt="">
+    <img src="./assets/images/filtro_banner.png" alt="">
     <div class="overlay"></div>
     <div class="text">
         <h1>Actividades {{$evento}}</h1>

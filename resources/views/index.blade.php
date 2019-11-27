@@ -4,7 +4,7 @@
 {{-- Banner video --}}
 <div class="banner_video">
     <video src="assets/video/webvideo.mp4" autoplay="true" loop="true" controls="true"></video>
-    {{-- <div class="overlay-video"></div> --}}
+    <div class="overlay-video"></div>
     <div class="text-banner">
             <h1 class="paz">PAZ</h1>
             <h1 class="unidad">UNIDAD</h1>
