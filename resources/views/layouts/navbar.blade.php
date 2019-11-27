@@ -11,13 +11,13 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item ">
-                    <a class="nav-link text-white" href="/">Inicio</a>
+                    <a class="nav-link text-white" href="{{route('index')}}#Actividades">Inicio</a>
                     </li>
                     <li class="nav-item ">
-                    <a class="nav-link text-white" href="#Actividades">Actividades</a>
+                    <a class="nav-link text-white" href="{{route('index')}}#Actividades">Actividades</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#Galeria">Galería</a>
+                        <a class="nav-link text-white" href="{{route('index')}}#Galeria">Galería</a>
                     </li>
                 </ul>
             </div>
