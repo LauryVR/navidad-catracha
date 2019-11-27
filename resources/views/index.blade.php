@@ -3,8 +3,8 @@
 @section('content')
 {{-- Banner video --}}
 <div class="banner_video">
-    <video src="assets/video/nc_video.mp4" autoplay="true" loop="true"></video>
-    <div class="overlay-video"></div>
+    <video src="assets/video/webvideo.mp4" autoplay="true" loop="true" controls="true"></video>
+    {{-- <div class="overlay-video"></div> --}}
     <div class="text-banner">
             <h1 class="paz">PAZ</h1>
             <h1 class="unidad">UNIDAD</h1>
@@ -36,7 +36,7 @@
                 </div>
             </div>
             <div class="col-sm-12 col-lg-5 img-right p-0 d-none d-lg-block">
-                <img src="./assets/images/navidad.jpg" class="img-fluid" alt="" style="" srcset="">
+                <img src="./assets/images/NavidadFotosWeb2.png" class="img-fluid" alt="" style="" srcset="">
             </div>
         </div>
     </div>

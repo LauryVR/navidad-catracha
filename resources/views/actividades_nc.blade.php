@@ -9,7 +9,7 @@
             <h2>Busca las actividades en tu Departamento</h2>
             <form action="{{route('filtrar')}}" method="get">
                 <div class="row">
-                    <div class="col-lg-11 col-sm-11 col-md-11">
+                    <div class="col-lg-10 col-sm-12 col-md-12 p0">
                         <select class="form-control" name="departamentos" id="departamentos">
                             <option value="0">Seleccione el departamento</option>
                             <option value="Francisco Morazán">Francisco Morazán</option>
@@ -30,11 +30,12 @@
                             <option value="Choluteca">Choluteca</option>
                             <option value="Lempira">Lempira</option>
                         </select>
+                        {!! $errors->first('departamentos', '<small class="text-white">:message</small>') !!}
                         <p>*Recuerda que todas las actividades son gratuitas</p>
 
                     </div>
-                    <div class="col-lg-1 col-sm-1 col-md-1">
-                        <button class="btn btn-primary" type="submit">Filtrar</button>
+                    <div class="col-lg-1 col-sm-1 col-md-1 p-0">
+                        <button class="btn btn-primary" type="submit">Encontrar</button>
                     </div>
                 </div>
             </form>

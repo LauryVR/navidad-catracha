@@ -1,5 +1,5 @@
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg text-white mt-4 navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-lg text-white navbar-dark fixed-top">
         <div class="container">
         <a class="navbar-brand" href="/">
             <img src="./assets/images/logonc.png" class="logo float-logo" alt="">

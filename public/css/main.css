@@ -249,6 +249,10 @@ ul .navbar-nav li a {
   background-position: center center;
 }
 
+.owl-nav {
+  display: none;
+}
+
 .banner-acts {
   height: 100vh;
   width: 100%;
@@ -281,7 +285,7 @@ ul .navbar-nav li a {
 }
 
 .banner-acts .text h1 {
-  font-size: 4rem !important;
+  font-size: 2.5rem !important;
 }
 
 @media (max-width: 575.98px) {

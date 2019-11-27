@@ -4,12 +4,12 @@ $(function (){
         $('.navbar').addClass("background-color1-nc");
         $('.logo').addClass("nav-logo");
         $('.logo').removeClass("float-logo");
-        $('.navbar').removeClass("mt-4");
+        /* $('.navbar').removeClass("mt-4"); */
         } else {
         $(".navbar").removeClass("background-color1-nc");
         $('.logo').removeClass("nav-logo");
         $('.logo').addClass("float-logo");
-        $(".navbar").addClass("mt-4");
+        /* $(".navbar").addClass("mt-4"); */
         }
     });
 })

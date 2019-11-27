@@ -29,8 +29,12 @@ class index extends Controller
     }   
 
     public function filtrar(Request $request){
-        $filtro = $request;
-        $filtro = $filtro->departamentos;
+        $filtro = request()->validate([
+            'departamentos'=>'not_in:0'
+        ],
+        [
+            'departamentos.not_in'=>__('¡Hohoho! Selecciona una opción valida para saber que actividades se estaran realizando en tu departamento')
+        ]);
         $Cronograma_filtrado = Cronograma::where('departamento','like', $filtro)->get();
         $cantidad = count($Cronograma_filtrado);
         /* dd($Cronograma); */
