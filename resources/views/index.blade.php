@@ -60,15 +60,15 @@
                             <p  class="text-left">{{$item->descripcion}} </p> 
                         </div>
                     </div>
-                    @php
+                    {{-- @php
                     $url = $item->imagendestacada;
                     $url = str_replace('\\', '/', $url);
-                    @endphp
+                    @endphp --}}
                     <div class="text-center">
                     <a class="btn btn-nc btn-block mt-2" style="" href="actividades-{{$item->id}}" role="button">Actividades</a>
-                    <a class="elem btn btn-link btn-link btn-block mt-2" style="border-radius: 0" href="{{Storage::url($url)}}" title=""
+                    {{-- <a class="elem btn btn-link btn-link btn-block mt-2" style="border-radius: 0" href="{{Storage::url($url)}}" title=""
                     data-lcl-thumb="{{Storage::url($url)}}">
-                    Ver Galeria</a>
+                    Ver Galeria</a> --}}
                     <!--<a class="elem {{--$item->id}} btn btn-link mt-4" style="border-radius: 0"  data-lcl-thumb="{{--Storage::url($url)--}}" href="{{--Storage::url($url)--}}">Galeria</a> -->
                     </div>
                 </div>
@@ -81,19 +81,19 @@
 {{-- Galeria --}}
 
 <div id="Galeria" class="py-5">
-        <div class="container text-center"><h1>Galería</h1></div>
+    <div class="container text-center"><h1>Galería</h1></div>
     <div class="container-fluid">
         <div class="row">
-            @foreach ($galeria_eventos as $item) 
+            @foreach ($fotografias as $fotografia) 
             @php
-            $url = $item->imagendestacada;
+            $url = $fotografia->imagen;
             $url = str_replace('\\', '/', $url);
             @endphp  
             <div class="col-sm-6 col-lg-3 shadow1 p-0" style="">
-                <a class="elem" style="object-fit:cover;" href="{{Storage::url($url)}}" title=""
-                    data-lcl-txt="" data-lcl-author=""
-                    data-lcl-thumb="{{Storage::url($url)}}">
-                    <span style="background-image:url({{Storage::url($url)}});" class="img-fluid"></span>
+            <a class="elem" style="object-fit:cover;" href="{{Storage::url($url)}}" title="Evento: {{$fotografia->evemto}}"
+            data-lcl-txt="{{$fotografia->descripcion}}" data-lcl-author=""
+                    data-lcl-thumb="..{{Storage::url($url)}}">
+                    <span style="background-image:url(..{{Storage::url($url)}});" class="img-fluid"></span>
                 </a>
             </div>
             @endforeach

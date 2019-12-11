@@ -7,15 +7,17 @@ use Illuminate\Http\Request;
 use App;
 use App\Eventos;
 use App\Cronograma;
+use App\Fotografia;
 
 class index extends Controller
 {
     public function index() {
         $Eventos = App\Eventos::all();
         $galeria_eventos = Eventos::take(8)->get();
-        //dd($Eventos);
+        $fotografias = Fotografia::all()->random(4);
+        /* dd($fotografias); */
         /* dd($galeria_eventos); */
-        return view('index',compact('Eventos', 'galeria_eventos'));
+        return view('index',compact('Eventos', 'galeria_eventos', 'fotografias'));
     }
 
     public function cronograma(Request $request, $id){
